@@ -69,34 +69,29 @@ function appendEmployeesToDom() {
         cell5.innerHTML = employeeList[i].salary;
         cell6.innerHTML = '';
 
+
+        
     } 
-    // // starting variable name with $ because it came from Jquery 
-    // //convention, not wrong if you don't do this
-    // const $ul = $('#list-pets');
-    // //Empty the ul element first
-    // $ul.empty();
-
-    // //Append all the pets to the appendPetsToDom
-    // for (const employee of employeeList) {
-    //     let $li = $(`<li>The ${employee.fname}  ${employee.lname} is with id</li>`)
-    //     // $ul.append( `<li>${pet.name} is a ${pet.type}.</li>` );
-
-    //     $ul.append($li);
-    }
-
-function addSalary() {
-    console.log('in add salary');
-    let totalSalary = 0;
-    for (let h = 0; h < employeeList.length; h++) {
-        totalSalary += Number(employeeList[h].salary);
-        console.log('total salary', employeeList[h].salary);
-        let el = $('#totalsalary');
-        el.empty();
-        el.append(totalSalary);
-    }
-    //  {
-    //         let el = $('maxcars');
-    //         el.append('No available parking spots!');
-    //         console.log('No available parking spots');
-    //     }
+    
 }
+
+
+    function addSalary() {
+        console.log('in add salary');
+        let totalSalary = 0;
+        for (let h = 0; h < employeeList.length; h++) {
+            totalSalary += Number(employeeList[h].salary);
+            console.log('total salary', employeeList[h].salary);
+            let el = $('#totalsalary');
+            el.empty();
+            el.append(totalSalary);
+
+            if (totalSalary > 20000) {
+                $('#totalsalary').addClass('red');
+            }
+        }
+    }
+
+
+
+
