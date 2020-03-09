@@ -29,25 +29,61 @@
 
               <input type="text" id="title" style="width:230px; height:30px;" placeholder="Title"/>
 
-              <input type="text" id="annual-salary" style="width:230px; height:30px;" placeholder="Annual Salary"/>
+              <input type="number" id="annual-salary" style="width:230px; height:30px;" placeholder="Annual Salary"/>
             </form>
           </div>
-          <p align ="right">
+                <p align ="right">
                 <button id="btn-submit">submit</button>          
               </p>
-          
         </section>
 
         <section>
+          <table id = "TopTable" class="tg">
+            <tr>
+              <h2> Employees </h2>
+            </tr>
+            <tr>
+              <td class="tg-hmp3">First Name</td>
+              <td class="tg-hmp3">Last Name</td>
+              <td class="tg-hmp3">ID</td>
+              <td class="tg-hmp3">Title</td>
+              <td class="tg-hmp3">Annual Salary</td>
+              <td class="tg-hmp3"></td>
+            </tr>
+            </table>
+            <tr>
+              <table id="myTable" class="tg">
+                <tr>
+                </tr>
+                <tr>
+                  <td class="tg-hmp3"></td>
+                  <td class="tg-hmp3"></td>
+                  <td class="tg-hmp3"></td>
+                  <td class="tg-hmp3"></td>
+                  <td class="tg-hmp3"></td>
+                  <td class="tg-hmp3"></td>
+                </tr>
+              </table>
+             
           
-          <br />
-          <button type="submit" id="btn-add">Add Pet</button>
 
-         <ul id = "list-pets">
+
+
+
+          <br />
+          <!-- <button type="submit" id="btn-add">Add Pet</button> -->
+
+         <!-- <ul id = "list-pets"> -->
 
          </ul>
         </section>
          
+<section>
+  
+      <h3 align ="right">Total Salary of all the Employees: $<span id="totalsalary">0</span></h3>
+
+</section>
+
        </main>
        <footer>
          Copyright &copy; 2020
